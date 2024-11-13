@@ -9,7 +9,7 @@ Dataset Drive Link: [Google Drive Dataset](https://drive.google.com/drive/folder
 
 Each dataset (`cifar10`, `cifar100`, `imagenet`) is organized into separate folders containing benign and adversarial images. Below is the directory structure for each dataset:
 
-<pre> ```plaintext
+<pre> ```
 Adversarial_dataset_24/
 ├── cifar10/
 │   ├── Benign_cf10/
