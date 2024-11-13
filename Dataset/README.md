@@ -113,7 +113,6 @@ To run the adversarial image generation code, make sure you have the following i
 ```bash
 pip install tensorflow foolbox eagerpy tensorflow-hub opencv-python numpy
 ```
-
 ## 2. Overview
 
 This code uses **Foolbox**, a powerful library for generating adversarial examples, to create adversarial images from datasets like **CIFAR-10**. The following attacks are supported:
