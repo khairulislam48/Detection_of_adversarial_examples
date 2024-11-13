@@ -132,5 +132,6 @@ For more information on **Foolbox**, visit the [Foolbox GitHub](https://github.c
 This dataset is intended for research purposes, particularly in studying adversarial attacks and their impact on image classification models. You are free to use and modify this dataset in accordance with the license provided.
 
 For further inquiries or issues, please contact the repository maintainer.
+Email: rk0560005@gmail.com
 
 ---
