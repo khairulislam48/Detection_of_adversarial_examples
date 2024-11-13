@@ -93,6 +93,41 @@ To ensure balanced representation across benign and adversarial images, follow t
    - **Equal Distribution by Perturbation Level**: Within each attack type, select images equally across the three perturbation levels (ε = 0.01, 0.1, 0.3).
 3. The resulting validation set will contain 1000 benign images and 1000 adversarial images, maintaining balance across attacks and perturbation levels.
 
+## Dataset Generation
+
+The adversarial images in this dataset were generated using **Foolbox**, a powerful library for generating adversarial examples. The following attacks were applied to datasets like **CIFAR-10**, **CIFAR-100**, and **ImageNet**:
+
+- **FGSM** (Fast Gradient Sign Method)
+- **BIM** (Basic Iterative Method)
+- **PGD** (Projected Gradient Descent)
+
+The generated adversarial images are saved in separate folders, organized by attack type and perturbation level (e.g., ε = 0.01, 0.1, 0.3).
+
+### 1. Prerequisites
+
+To run the adversarial image generation code, make sure you have the following installed:
+
+- **Python 3.6 or higher**
+- **Required Python Libraries**:
+
+```bash
+pip install tensorflow foolbox eagerpy tensorflow-hub opencv-python numpy
+```
+
+## 2. Overview
+
+This code uses **Foolbox**, a powerful library for generating adversarial examples, to create adversarial images from datasets like **CIFAR-10**. The following attacks are supported:
+
+- **FGSM** (Fast Gradient Sign Method)
+- **BIM** (Basic Iterative Method)
+- **PGD** (Projected Gradient Descent)
+
+The generated adversarial images will be saved in separate folders, organized by attack type and perturbation level (e.g., ε = 0.01, 0.1, 0.3).
+
+For more information on **Foolbox**, visit the [Foolbox GitHub](https://github.com/bethgelab/foolbox).
+
+
+
 ## Usage
 
 This dataset is intended for research purposes, particularly in studying adversarial attacks and their impact on image classification models. You are free to use and modify this dataset in accordance with the license provided.
