@@ -6,15 +6,14 @@ Deep neural networks (DNNs) excel in image classification but are vulnerable to 
 To address these challenges, this study proposes a classification model using a scratch Convolutional Neural Network (CNN) with modified self-attention block. This model is designed to distinguish subtle alterations caused by adversarial attacks at different perturbation levels and to generalize in classifying benign and adversarial images of previously unseen attacks, ensuring the model handles new adversarial attacks without retraining. Due to the lack of benchmark datasets, we created a large and diverse adversarial image dataset derived from popular image datasets, incorporating adversarial images from three different attacks, each with three perturbation levels. Our proposed model achieves an impressive accuracy of 97\% to 98\% and approaches a nearly perfect AUC score. It maintains a low false positive rate of 2\% to 5\%, crucial for minimizing misclassifications in adversarial attack detection. Additionally, our proposed model outperforms existing state-of-the-art techniques and possesses 13.04 GFLOPs, 6.52 GMACs, and a rapid inference time of 0.2 seconds, ensuring efficiency and responsiveness for practical applications.
 
 # Table of Contents
-- [Environment Info](#Environment Info)
+- [Prerequisites](#prerequisites)
 - [Dataset](#dataset)
-- [Setup Instructions](#setup-instructions)
 - [Training the Model](#training-the-model)
 - [Evaluating the Model](#evaluating-the-model)
 - [Visualizing Results](#visualizing-results)
-- [Acknowledgements](#acknowledgements)
 
-# Environment Info
+
+# Prerequisites
 The following information outlines the environment required to run this project:
 
 ### System
@@ -34,7 +33,7 @@ Please click the link below to access the dataset:
 
 [Google Drive Dataset](https://drive.google.com/drive/folders/1wf1fZ0X9ti1ztGCpQs2JrmgKTrJ0fZWL?usp=sharing)
 
-# Running Code
+# Training the Model
 
 
 
