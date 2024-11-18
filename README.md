@@ -35,5 +35,33 @@ Please click the link below to access the dataset:
 
 # Training the Model
 
+### 1. **Dataset Preparation**  
+   - Refer to the **Dataset** section for detailed instructions on dataset preparation.  
+   - Ensure the dataset is preprocessed and structured correctly as per the requirements outlined.
+
+### 2. **Model Initialization**  
+   - The model architecture, including any custom layers and blocks, must be defined in the script.
+   - The loss function and optimizer (e.g., Adam, SGD) are to be chosen according to the task.
+   - Hyperparameters such as learning rate, batch size, and number of epochs should be set in the script.
+
+### 3. **Training Loop**  
+   - Training is conducted for a defined number of epochs.
+   - During each epoch, the model is trained using the training data, and the weights are updated based on the loss.
+   - The loss should be calculated using the output from the model and the ground truth labels.
+
+### 4. **Validation**  
+   - The model's performance is evaluated using the validation set after each epoch.
+   - Metrics like accuracy, precision, recall, or others can be used to monitor the model’s progress.
+
+### 5. **Model Saving**  
+   - Once training is complete, the model's weights should be saved in a specified directory for future use (e.g., for inference or further fine-tuning).
+
+### How to Run:
+
+To start training, execute the following command in the terminal:
+
+```bash
+python train.py
+
 
 
