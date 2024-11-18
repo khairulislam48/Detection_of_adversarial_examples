@@ -35,13 +35,14 @@ Please click the link below to access the dataset:
 
 # Training the Model
 
+## Guidelines for Training the Model (`train.py`)
 ### 1. **Dataset Preparation**  
    - Refer to the **Dataset** section for detailed instructions on dataset preparation.  
    - Ensure the dataset is preprocessed and structured correctly as per the requirements outlined.
 
 ### 2. **Model Initialization**  
    - The model architecture, including any custom layers and blocks, must be defined in the script.
-   - The loss function and optimizer (e.g., Adam, SGD) are to be chosen according to the task.
+   - The loss function and optimizer are to be chosen according to the task.
    - Hyperparameters such as learning rate, batch size, and number of epochs should be set in the script.
 
 ### 3. **Training Loop**  
@@ -62,6 +63,59 @@ To start training, execute the following command in the terminal:
 
 ```bash
 python train.py
+```
+
+# Evaluating the Model
+
+## Guidelines for Model Evaluation (`result.py`)
+
+### 1. **Dataset Preparation**  
+   - Ensure the test dataset is prepared and follows the same preprocessing steps as the training dataset.  
+   - Refer to the **Dataset** section for details on data preparation.
+
+### 2. **Model Loading**  
+   - The trained model's weights must be loaded from the saved checkpoint.
+   - Verify that the model architecture matches the one used during training.
+
+### 3. **Evaluation Metrics**  
+   - Define evaluation metrics such as accuracy, precision, recall, F1 score, or others, depending on the task.
+   - Results are computed based on model predictions compared to the ground truth labels.
+
+### 4. **Generate Results**  
+   - The script processes the test data and produces predictions using the trained model.
+   - Evaluation metrics are calculated and displayed or saved as output.
 
 
+### How to Run:
 
+To evaluate the model, execute the following command in the terminal:
+
+```bash
+python result.py
+```
+
+# Visualizing Results
+## Guidelines for Visualizing Attention Maps (`visualize_attention_map.py`)
+
+### 1. **Dataset Preparation**  
+   - Ensure the input image is preprocessed and follows the format required by the model.  
+   
+
+### 2. **Model Loading**  
+   - The trained model's weights must be loaded from the saved checkpoint.
+   - Confirm the model architecture matches the one used for training and evaluation.
+
+### 3. **Attention Map Visualization**  
+   - Attention maps highlight the regions of the image the model focuses on during processing.
+   - The script extracts and visualizes attention maps from specified layers of the model.
+
+### 4. **Save or Display Visualization**  
+   - Attention maps are displayed using `matplotlib` or saved as image files for further analysis.
+
+### How to Run:
+
+To visualize attention maps, execute the following command in the terminal:
+
+```bash
+python visualize_attention_map.py
+```
