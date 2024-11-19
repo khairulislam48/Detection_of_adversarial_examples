@@ -4,6 +4,7 @@
 This repository contains adversarial image datasets generated for CIFAR-10, CIFAR-100, and ImageNet using three adversarial attack techniques: **FGSM**, **BIM**, and **PGD**. Each dataset includes images at different perturbation levels (ε = 0.01, 0.1, 0.3). These images are organized to facilitate research on adversarial example classification.
 
 Dataset Drive Link: [Google Drive Dataset](https://drive.google.com/drive/folders/1wf1fZ0X9ti1ztGCpQs2JrmgKTrJ0fZWL?usp=sharing)
+DOI of this dataset: 10.5281/zenodo.14177540.
 
 ## File Structure
 
