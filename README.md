@@ -13,7 +13,7 @@ This repository contains the Pytorch implementation for the paper and the datase
 The following information outlines the environment required to run this project:
 
 ### System
-- **Platform**: Linux
+- **Platform**: Linux/ Windows
 
 ### Python
 - **Version**: Python 3.9 or above
@@ -117,3 +117,7 @@ To visualize attention maps, execute the following command in the terminal:
 ```bash
 python visualize_attention_map.py
 ```
+
+
+# Acknowledgment
+Adversarial images were generated using adversarial attacks implemented via the Foolbox library, available at https://github.com/bethgelab/foolbox.
