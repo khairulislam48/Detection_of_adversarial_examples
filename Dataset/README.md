@@ -5,7 +5,7 @@ This repository contains adversarial image datasets generated for CIFAR-10, CIFA
 
 Dataset Drive Link: [Google Drive Dataset](https://drive.google.com/drive/folders/1wf1fZ0X9ti1ztGCpQs2JrmgKTrJ0fZWL?usp=sharing)
 
-DOI of this dataset: 10.5281/zenodo.14177540.
+
 
 ## File Structure
 
